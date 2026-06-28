@@ -20,7 +20,7 @@ body {
         Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
     line-height: 1.6;
     color: #1a1a2e;
-    background: linear-gradient(135deg, #fafafa 0%, #f0f4ff 50%, #f5fdf7 100%);
+    background: #e2e8f0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     min-height: 100vh;
@@ -332,7 +332,7 @@ ul {
    ============================= */
 
 .projects-section {
-    background: #fff;
+    background: #cbd5e1;
 }
 
 .projects-grid {
@@ -342,7 +342,7 @@ ul {
 }
 
 .project-card {
-    border: 1px solid #e5e7eb;
+    border: 1px solid rgba(148, 163, 184, 0.3);
     border-radius: 12px;
     overflow: hidden;
     background: #fff;
@@ -351,7 +351,7 @@ ul {
 
 .project-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
     border-color: #0ea5e9;
 }
 
@@ -442,7 +442,7 @@ ul {
    ============================= */
 
 .game-section {
-    background: linear-gradient(180deg, #0f172a 0%, #1a1a2e 100%);
+    background: #475569;
     color: #e2e8f0;
     position: relative;
     overflow: hidden;
@@ -455,8 +455,8 @@ ul {
     left: -50%;
     width: 200%;
     height: 200%;
-    background: radial-gradient(ellipse at 30% 50%, rgba(14, 165, 233, 0.06) 0%, transparent 50%),
-                radial-gradient(ellipse at 70% 50%, rgba(16, 185, 129, 0.06) 0%, transparent 50%);
+    background: radial-gradient(ellipse at 30% 50%, rgba(14, 165, 233, 0.1) 0%, transparent 50%),
+                radial-gradient(ellipse at 70% 50%, rgba(16, 185, 129, 0.1) 0%, transparent 50%);
     pointer-events: none;
 }
 
@@ -591,7 +591,15 @@ ul {
    ============================= */
 
 .interests-section {
-    background: #fafafa;
+    background: #334155;
+}
+
+.interests-section .section-title {
+    color: #f1f5f9;
+}
+
+.interests-section .section-subtitle {
+    color: #94a3b8;
 }
 
 .interests-grid {
@@ -601,8 +609,8 @@ ul {
 }
 
 .interest-card {
-    background: #fff;
-    border: 1px solid #e5e7eb;
+    background: #475569;
+    border: 1px solid rgba(148, 163, 184, 0.2);
     border-radius: 12px;
     padding: 2rem;
     text-align: center;
@@ -632,12 +640,18 @@ ul {
     font-size: 1.2rem;
     font-weight: 700;
     margin-bottom: 0.6rem;
-    color: #1a1a2e;
+    color: #f1f5f9;
+}
+
+.interest-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    border-color: rgba(148, 163, 184, 0.4);
 }
 
 .interest-card p {
     font-size: 0.9rem;
-    color: #6b7280;
+    color: #cbd5e1;
     line-height: 1.55;
 }
 
@@ -646,7 +660,7 @@ ul {
    ============================= */
 
 .contact-section {
-    background: linear-gradient(180deg, #fafafa 0%, #f0f4ff 100%);
+    background: #1e293b;
     text-align: center;
 }
 
@@ -654,9 +668,17 @@ ul {
     max-width: 600px;
 }
 
+.contact-section .section-title {
+    color: #f1f5f9;
+}
+
+.contact-section .section-subtitle {
+    color: #94a3b8;
+}
+
 .contact-message {
     font-size: 1rem;
-    color: #6b7280;
+    color: #cbd5e1;
     line-height: 1.6;
     margin-bottom: 2.5rem;
 }
@@ -673,21 +695,21 @@ ul {
     align-items: center;
     gap: 0.5rem;
     padding: 0.75rem 1.75rem;
-    border: 1px solid #e5e7eb;
+    border: 1px solid rgba(148, 163, 184, 0.25);
     border-radius: 8px;
     font-weight: 600;
     font-size: 0.95rem;
-    color: #1a1a2e;
-    background: #fafafa;
+    color: #e2e8f0;
+    background: #475569;
     transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
 }
 
 .contact-link:hover {
-    background: #1a1a2e;
+    background: #0ea5e9;
     color: #fff;
-    border-color: #1a1a2e;
+    border-color: #0ea5e9;
     transform: translateY(-2px);
-    box-shadow: 0 6px 18px rgba(26, 26, 46, 0.15);
+    box-shadow: 0 6px 18px rgba(14, 165, 233, 0.25);
 }
 
 .contact-link-icon {
@@ -699,9 +721,9 @@ ul {
    ============================= */
 
 .site-footer {
-    border-top: 1px solid #e5e7eb;
+    border-top: 1px solid rgba(148, 163, 184, 0.15);
     padding: 1.5rem 0;
-    background: linear-gradient(135deg, #1a1a2e, #0f3460);
+    background: #0f172a;
 }
 
 .footer-content {
