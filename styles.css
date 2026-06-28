@@ -335,6 +335,12 @@ ul {
     margin-bottom: 1.25rem;
 }
 
+.project-card-actions {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
 .tag {
     display: inline-block;
     padding: 0.25rem 0.75rem;
@@ -343,6 +349,69 @@ ul {
     font-weight: 500;
     background: #e5e7eb;
     color: #374151;
+}
+
+/* =============================
+   Play Game Section
+   ============================= */
+
+.game-section {
+    background: #fff;
+}
+
+.game-instructions {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.game-instructions strong {
+    color: #374151;
+}
+
+.game-frame-container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    background: #1a1a2e;
+}
+
+.game-frame-container::before {
+    content: "";
+    display: block;
+    padding-top: 66.67%; /* 3:2 aspect ratio */
+}
+
+.game-frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.game-note {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.game-note a {
+    font-size: 0.9rem;
+    color: #4b5563;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color 0.2s;
+}
+
+.game-note a:hover {
+    color: #1a1a2e;
 }
 
 /* =============================
@@ -521,6 +590,20 @@ ul {
     /* Projects */
     .projects-grid {
         grid-template-columns: 1fr;
+    }
+
+    .project-card-actions {
+        flex-direction: column;
+    }
+
+    .project-card-actions .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Game */
+    .game-frame-container::before {
+        padding-top: 75%; /* taller on mobile */
     }
 
     /* Interests */
