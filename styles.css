@@ -367,6 +367,26 @@ ul {
     transition: transform 0.3s;
 }
 
+.project-card-image-placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1e293b, #334155);
+}
+
+.placeholder-icon {
+    font-size: 3.5rem;
+    opacity: 0.5;
+}
+
+.btn-disabled {
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: none;
+}
+
 .project-card:hover .project-card-image img {
     transform: scale(1.03);
 }
